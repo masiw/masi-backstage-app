@@ -1875,6 +1875,27 @@
     react-use "^17.2.4"
     zen-observable "^0.8.15"
 
+"@backstage/plugin-circleci@^0.3.8":
+  version "0.3.8"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-circleci/-/plugin-circleci-0.3.8.tgz#abd871243207313381ea173acc62312e341194ee"
+  integrity sha512-WzcF0DyUVkWYgb5Ftj2OCinNwkRVq3kzvF0GgoyWRKJITFo6jrfMnhrTS4n4sJ8038BQmRz8QAbWGPA/8HvLXA==
+  dependencies:
+    "@backstage/catalog-model" "^1.1.0"
+    "@backstage/core-components" "^0.11.0"
+    "@backstage/core-plugin-api" "^1.0.5"
+    "@backstage/plugin-catalog-react" "^1.1.3"
+    "@backstage/theme" "^0.2.16"
+    "@material-ui/core" "^4.12.2"
+    "@material-ui/icons" "^4.9.1"
+    "@material-ui/lab" "4.0.0-alpha.57"
+    circleci-api "^4.0.0"
+    humanize-duration "^3.27.0"
+    lodash "^4.17.21"
+    luxon "^3.0.0"
+    react-router "6.0.0-beta.0"
+    react-router-dom "6.0.0-beta.0"
+    react-use "^17.2.4"
+
 "@backstage/plugin-github-actions@^0.5.8":
   version "0.5.8"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-github-actions/-/plugin-github-actions-0.5.8.tgz#8dead96d55db25fec39a8cfbf92ec743ff0b6666"
@@ -1893,6 +1914,25 @@
     luxon "^3.0.0"
     react-router "6.0.0-beta.0"
     react-router-dom "6.0.0-beta.0"
+    react-use "^17.2.4"
+
+"@backstage/plugin-home@^0.4.24":
+  version "0.4.24"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-home/-/plugin-home-0.4.24.tgz#82bb624fdf56c4a2fd06958928813a648d88ca03"
+  integrity sha512-7cZYNM+4ZohE6MIXzVAMsBW5JpkOPXJP8RjMVsLOIX4FGngS5mK7LFVTuYZ/fLwAsNJIEc0s6zxHM8zyFw1Zow==
+  dependencies:
+    "@backstage/catalog-model" "^1.1.0"
+    "@backstage/config" "^1.0.1"
+    "@backstage/core-components" "^0.11.0"
+    "@backstage/core-plugin-api" "^1.0.5"
+    "@backstage/plugin-catalog-react" "^1.1.3"
+    "@backstage/plugin-stack-overflow" "^0.1.4"
+    "@backstage/theme" "^0.2.16"
+    "@material-ui/core" "^4.12.2"
+    "@material-ui/icons" "^4.9.1"
+    "@material-ui/lab" "4.0.0-alpha.57"
+    lodash "^4.17.21"
+    react-router "6.0.0-beta.0"
     react-use "^17.2.4"
 
 "@backstage/plugin-org@^0.5.8":
@@ -2176,6 +2216,25 @@
     qs "^6.9.4"
     react-router "6.0.0-beta.0"
     react-router-dom "6.0.0-beta.0"
+    react-use "^17.2.4"
+
+"@backstage/plugin-stack-overflow@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-stack-overflow/-/plugin-stack-overflow-0.1.4.tgz#98f8b78c36fc51ed51934c540b08247b85397b6d"
+  integrity sha512-JzXs6lMzsBJTP5zLhzBoikzGv3kk47ahj6bDA9KhvHN/ky+rZ8Ue56wZ9oB5rABbH5BnenVkJvy/k7gnXl4s/g==
+  dependencies:
+    "@backstage/config" "^1.0.1"
+    "@backstage/core-components" "^0.11.0"
+    "@backstage/core-plugin-api" "^1.0.5"
+    "@backstage/plugin-home" "^0.4.24"
+    "@backstage/plugin-search-common" "^1.0.0"
+    "@backstage/theme" "^0.2.16"
+    "@material-ui/core" "^4.12.2"
+    "@material-ui/icons" "^4.9.1"
+    "@testing-library/jest-dom" "^5.10.1"
+    cross-fetch "^3.1.5"
+    lodash "^4.17.21"
+    qs "^6.9.4"
     react-use "^17.2.4"
 
 "@backstage/plugin-tech-radar@^0.5.15":
@@ -5931,6 +5990,7 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     "@backstage/plugin-catalog-graph" "^0.2.20"
     "@backstage/plugin-catalog-import" "^0.8.11"
     "@backstage/plugin-catalog-react" "^1.1.3"
+    "@backstage/plugin-circleci" "^0.3.8"
     "@backstage/plugin-github-actions" "^0.5.8"
     "@backstage/plugin-org" "^0.5.8"
     "@backstage/plugin-permission-react" "^0.4.4"
@@ -7048,6 +7108,13 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
+
+circleci-api@^4.0.0:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/circleci-api/-/circleci-api-4.1.4.tgz#6880a28eb021879d81789b50996640dc6373c5ad"
+  integrity sha512-49F0P2mhmfqYzJR/V4+oM+1SfI/VjKPcurvkzuuawNqgW5Eo00ZufgpHgdT+qRrvRymk6yt45bWOIP/f0FKhJA==
+  dependencies:
+    axios "^0.21.1"
 
 cjs-module-lexer@^1.0.0:
   version "1.2.2"
@@ -10362,9 +10429,9 @@ graphql-ws@^5.4.1:
   integrity sha512-ewbPzHQdRZgNCPDH9Yr6xccSeZfk3fmpO/AGGGg4KkM5gc6oAOJQ10Oui1EqprhVOyRbOll9bw2qAkOiOwfTag==
 
 graphql@^16.0.0:
-  version "16.5.0"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.5.0.tgz#41b5c1182eaac7f3d47164fb247f61e4dfb69c85"
-  integrity sha512-qbHgh8Ix+j/qY+a/ZcJnFQ+j8ezakqPiHwPiZhV/3PgGlgf96QMBB5/f2rkiC9sgLoy/xvT6TSiaf2nTHJh5iA==
+  version "16.6.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.6.0.tgz#c2dcffa4649db149f6282af726c8c83f1c7c5fdb"
+  integrity sha512-KPIBPDlW7NxrbT/eh4qPXz5FiFdL5UbaA0XUNz2Rp3Z3hqBSkbj0GVjwFDztsWVauZUWsbKHgMg++sk8UX0bkw==
 
 gtoken@^6.0.0:
   version "6.1.1"
@@ -10745,7 +10812,7 @@ human-signals@^2.1.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
-humanize-duration@^3.25.1:
+humanize-duration@^3.25.1, humanize-duration@^3.27.0:
   version "3.27.2"
   resolved "https://registry.yarnpkg.com/humanize-duration/-/humanize-duration-3.27.2.tgz#4b4e565bec098d22c9a54344e16156d1c649f160"
   integrity sha512-A15OmA3FLFRnehvF4ZMocsxTZYvHq4ze7L+AgR1DeHw0xC9vMd4euInY83uqGU9/XXKNnVIEeKc1R8G8nKqtzg==
